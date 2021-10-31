@@ -13,8 +13,7 @@ body {
 }
 
 .card {
-  background-color: white;
-  border-radius: 5px;
+  background-color: #357;
   height: calc(100vh / 6);
   max-height: calc(100vw / 6);
 }
