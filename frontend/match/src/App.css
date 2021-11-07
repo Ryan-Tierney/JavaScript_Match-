@@ -17,3 +17,8 @@ body {
   height: calc(100vh / 6);
   max-height: calc(100vw / 6);
 }
+
+card .front img {
+  display: block;
+  max-width: 100%;
+}

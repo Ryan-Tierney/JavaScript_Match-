@@ -3,16 +3,20 @@ import Images from "./Images";
 import { useState } from "react";
 
 function App() {
-  const [cards, setCards] = useState(initialState, [...Images]);
+  const [cards, setCards] = useState(initialState: [...Images, ...Images]);
   return (
     <div>
       <div className='board'>
+        {cards.map((card,index : number) => (
         <div className='card-outer'>
           <div className='card'>
-            <div className='front'></div>
+              <div className='front'>
+                <img src={card} alt>""/>
+              </div>
             <div className='back'></div>
           </div>
-        </div>
+          </div>
+          ))}
       </div>
     </div>
   );
